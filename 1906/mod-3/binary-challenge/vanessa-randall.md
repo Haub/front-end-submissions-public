@@ -1,6 +1,19 @@
-### Evaluator:
-### Students:
+### Evaluator: Robbie
+### Students: Vanessa
 ### Comments:
+
+* Like the background for the search bar!
+* Would like to see some indication that there are no beers after searching
+
+* 76 passed!
+
+* apiCalls look good
+* Actions and reducers look good
+* Be doing more with fetch errors than `console.log`
+* Tell me more about using this `(beers|bookmarked|previously_brewed|search)` in a Route, neat
+* `exact` not needed on all routes in `App` - careful with overusing it as it can be confusing
+* In the `BeerCard` component, you have `beers` passed in from the store but not using it in the component
+* Could you make the switch statement in `Container` component
 
 ## Rubric 
 

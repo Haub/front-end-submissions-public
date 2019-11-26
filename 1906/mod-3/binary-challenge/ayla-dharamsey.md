@@ -1,6 +1,20 @@
-### Evaluator:
-### Students:
+### Evaluator: Robbie
+### Students: Ayla
 ### Comments:
+
+***App crashes when clicking on Saved For Later straight away**
+* Some compilation warnings in terminal when app is started
+* I like the columns dividing the articles
+* Is saved for later working? I think it is but the indicator is very buggy. Completed indicator is also a little buggy - not sure if you need to unfocus the button to be able to click it again...
+* Would be nice to do something with the completed articles like hide them from the feed once marked as completed
+* Like the icon usage throughout the app - simplifies things
+
+* Nice dynamic routing for each article - great that it links to actual article (and in a new tab)
+* Should not need "exact" on some of the Routes
+* Walk me through `componentDidMount` in `App` - what is happening when countries are not selected quite yet.
+* Cool that you are mapping through `countries` in `NewsContainer` component
+
+* 56 passed, 3 skipped - any questions about the skipped tests?
 
 ## Rubric 
 

@@ -1,6 +1,17 @@
-### Evaluator:
-### Students:
+### Evaluator: Robbie
+### Students: Chris
 ### Comments:
+
+* Super vibrant home page! Maybe tone down the background so the characters can stand out more, can't really see the text on the navbar
+* The fighting animation is cool - not sure the See Results button is necessary
+* The winner page is cool too - would like to see why that particular character won, what went into the comparison?
+* Some compilation warnings happening in the terminal when running `npm start`
+
+* 56 tests passing
+
+* The `App` render is getting pretty big - consider breaking this out into smaller compnents where it makes sense. I think the `BattleGround` component is getting a little large too. How would you break this up?
+* In `App`, why the need for inline style on the `ReactModal`
+* What were your thoughts on the Thunk pattern?
 
 ## Rubric 
 

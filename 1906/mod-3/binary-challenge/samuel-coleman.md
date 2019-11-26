@@ -1,6 +1,29 @@
-### Evaluator:
-### Students:
+### Evaluator: Robbie
+### Students: Sam
 ### Comments:
+
+* It's a nice image for the opening page background - very striking, but the text is really hard to read against the background
+* It's a subtle difference, but "select" is used when I can select something, like in a dropdown, but I have the _enter_ in the state
+* Cool check for a valid state (maybe wait until second character is entered or until the submit?)
+* Nice to have all the information for each park like Event, Campgrounds, etc. Would be nice to maybe disable the button if there is no information available for that particular category so I don't have to click through and see that there is no data (good to have the `No Information Available` placeholder, though)
+* The filter is nice - work on removing the filter as text is removed from the input
+
+* 73 tests passing - 6 failing - questions about these tests?
+
+* Why not call `displayParkInfo` when `ParksContainer` is mounted?
+* For mapStateToProps like...
+
+```js
+export const mapStateToProps = (state) => ({
+  parkInfo: state.parkInfo,
+  infoName: state.infoName,
+  parkId: state.parkId
+});
+```
+
+...It can be easier to read by destructuring `state` coming into that function (so no need to repeat the properties of the returned object)
+* Within the `ParkCard` component, I might split out the left bar into it's own component to separate its responsibility of displaying park info and taking the user to more information And it would be easier to refactor this/move this component if it's on its own
+
 
 ## Rubric 
 
@@ -13,14 +36,14 @@
 
 ### Project Professionalism
 
-* 1 - Either the README is incomplete, wireframes are not used, no project managment system was utilized, or more than 10 linter errors are present. Git history does not show evolution of project with many large and inconsistent commits. 
+* 1 - Either the README is incomplete, wireframes are not used, no project management system was utilized, or more than 10 linter errors are present. Git history does not show evolution of project with many large and inconsistent commits. 
 * 2 -  README has been updated but is missing group members, setup, tech used, application images, or etc.  Wireframes are included and a project management tool was started, but are not utilized throughout the entire project. Project has more than 5 linter errors. Project team makes large infrequent git commits. 
-* 3 - The codebase has less than 5 linter errors and README has been updated with all group members. Project utilized wireframes from the outset and updated them as changes were made. A project management tool was continuously used from the beginning of the project.  All git commits are atomic, made first to branches, and use descriptive and consise commit messages. 
+* 3 - The codebase has less than 5 linter errors and README has been updated with all group members. Project utilized wireframes from the outset and updated them as changes were made. A project management tool was continuously used from the beginning of the project.  All git commits are atomic, made first to branches, and use descriptive and concise commit messages. 
 * 4 - Codebase has zero linter errors/warnings and README is well documented with images of different pages, setup, purpose of application, and group members. Project team uses a rebase workflow, taking advantage of github issues to track work.
 
 ### React Architecture
 
-* 1 - PropTypes are substantially unused. Project shows little understanding of React and significant refactoring is required including but not limited to component structure, knowing when to use class vs functional components, mutation of props, or etc.  Unneccessary data is being passed down to child components through props. File structure is not modular.
+* 1 - PropTypes are substantially unused. Project shows little understanding of React and significant refactoring is required including but not limited to component structure, knowing when to use class vs functional components, mutation of props, or etc.  Unnecessary data is being passed down to child components through props. File structure is not modular.
 * 2 - PropType functionality is complete.  There are no unnecessary props being passed down to child components.  However, there are still methods that are being created inside of functional components instead of being passed down through props from a class component.  File structure is modular but api calls have not been broken out into a separate file.  
 * 3 - React architecture is clean and organized.  Logic is kept out of return statements.  There are some issues with the asynchronous js where the frontend is not matching with the backend.  There are multiple functions (including fetch calls) that are doing similar pieces of functionality that could continue to be refactored. Data fetched from API is not cleaned before being set to state.
 * 4 - Functions including fetch calls have been refactored to be reusuable for multiple queries.  Frontend data always matches the backend data.  Data fetched from API is run through a cleaning function (which lives in a separate file).  Implements excellent error handling if server is down or fetch fails.  This includes loading images as well as error messages on the frontend.
